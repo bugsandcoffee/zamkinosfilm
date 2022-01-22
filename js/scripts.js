@@ -7,6 +7,19 @@
 // Scripts
 // 
 
+// setInterval(()=>updateVideo(), 1000);
+
+// let frames = document.querySelectorAll('iframe')
+
+// function updateVideo() {
+//     if (window.outerWidth <= 600) {
+//         frames.forEach(frame => {
+//             frame.width = 300;
+//             frame.height = 200;
+//         })
+//     }
+// }
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
