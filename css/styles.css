@@ -3983,7 +3983,7 @@ textarea.form-control-lg {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
+  background-color: #ffc800;
   border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .dropdown-menu {
@@ -11373,12 +11373,13 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
-  color: #fff;
+  font-size: 1.3rem;
+  color: #ffc800;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #ffc800;
+  
 }
 
 @media (min-width: 992px) {
@@ -11417,16 +11418,29 @@ p {
   }
 }
 header.masthead {
+  margin-top: 5rem;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../assets/img/collage.JPG");
+  background-repeat: repeat-x;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
+
+@media (max-width: 450px) {
+  header.masthead {
+    background-position: top center;
+    margin-top: 10rem;
+  }
+
+  .morebtn{
+    margin-top: 10vh;
+  }
+}
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
@@ -11446,7 +11460,11 @@ header.masthead .masthead-heading {
   header.masthead {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
+   
   }
+ 
+
+
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
@@ -11472,6 +11490,7 @@ header.masthead .masthead-heading {
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
+  flex-direction: column;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -11480,6 +11499,30 @@ header.masthead .masthead-heading {
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+  
+
+
+}
+
+
+.iframecontainer{
+
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin-bottom: 2rem;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
@@ -11797,4 +11840,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 .btn-dark.info {
   margin-top: 20px;
   margin-bottom: -20px;
+}
+
+.iframesize{
+
 }
